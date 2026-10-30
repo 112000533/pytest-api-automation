@@ -1,5 +1,4 @@
 import requests
-from openai import base_url
 
 # 基础接口请求+assert断言
 class TestPytestDemo:

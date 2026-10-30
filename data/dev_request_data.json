@@ -1,0 +1,14 @@
+{
+  "create_post": {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+  },
+
+  "update_post": {
+  "id": 1,
+  "title": "updated title",
+  "body": "updated body",
+  "userId": 1
+}
+}

@@ -1,0 +1,8 @@
+response = requests.post(host + post_api,json=post_api_request_data)
+没有写json= 被当成了data=,传字典走表单编码，表单里没有数据类型，数字被转成了字符串，
+接口原样把这个字符串回显，最终和预期 JSON（数字类型）对不上。
+
+发起请求需要地址url+data,json=将请求数据转换为json格式。
+data= 传字典 → 表单编码 → 所有值（数字、布尔、嵌套对象）全部变成无类型的字符串；
+json= 传字典 → JSON 序列化 → 类型完整保留（数字还是数字、布尔还是布尔、嵌套结构还是嵌套结构）。
+

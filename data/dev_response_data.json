@@ -1,0 +1,19 @@
+{
+  "get_todo": {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+  },
+  "create_post": {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1,
+    "id": 101
+  },
+  "update_post": {
+  "title": "updated title",
+  "body": "updated body",
+  "userId": 1
+}
+}

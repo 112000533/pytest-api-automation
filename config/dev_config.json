@@ -1,0 +1,9 @@
+ {
+  "host": "https://jsonplaceholder.typicode.com",
+  "apis": {
+    "get_todo": "/todos/1",
+    "create_post": "/posts",
+    "get_post": "/posts/1",
+    "update_post": "/posts/1"
+  }
+}

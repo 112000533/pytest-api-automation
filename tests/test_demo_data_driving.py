@@ -7,10 +7,10 @@ import json
 with open("config/config.json", "r") as f:
     config = json.load(f)
 # 从测试数据文件夹获取请求数据
-with open("data/request_data.json", "r") as f:
+with open("data/v1/request_data.json", "r") as f:
     request_data = json.load(f)
 # 接口响应数据
-with open("data/response_data.json", "r") as f:
+with open("data/v1/response_data.json", "r") as f:
     response_data = json.load(f)
 
 class TestDemo:

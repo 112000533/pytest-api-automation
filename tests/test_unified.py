@@ -90,6 +90,7 @@ class TestUnifiedAPI:
         ("查询待办", "GET", "get_todo", 200),
         ("创建文章", "POST", "create_post", 201),
         ("查询文章", "GET", "get_post", 200),
+        ("测试111", "GET", "update_post", 200)
     ])
     def test_api_by_parametrize(
         self, case_name, method, api_key, expected_status,

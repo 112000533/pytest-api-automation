@@ -4,10 +4,10 @@ import pytest
 
 class TestPytestMultiEnvDemo:
     @pytest.mark.Regression  # mark the test case as regression
-    def test_get_demo_multi_env(self, env_config, env_request_data, env_response_data):
-        host = env_config["host"]
-        get_api = env_config["getAPI"]
-        get_api_response_data = env_response_data["getAPI"]
+    def test_get_demo_multi_env(self, env_config_v1, env_request_data_v1, env_response_data_v1):
+        host = env_config_v1["host"]
+        get_api = env_config_v1["getAPI"]
+        get_api_response_data = env_response_data_v1["getAPI"]
         # send request
         response = requests.get(host+get_api)
         # assert
@@ -15,11 +15,11 @@ class TestPytestMultiEnvDemo:
         assert response.json() == get_api_response_data
 
     @pytest.mark.Smoke  # mark the test case as smoke
-    def test_post_demo_multi_env(self, env_config, env_request_data, env_response_data):
-        host = env_config["host"]
-        post_api = env_config["postAPI"]
-        post_api_request_data = env_request_data["postAPI"]
-        post_api_response_data = env_response_data["postAPI"]
+    def test_post_demo_multi_env(self, env_config_v1, env_request_data_v1, env_response_data_v1):
+        host = env_config_v1["host"]
+        post_api = env_config_v1["postAPI"]
+        post_api_request_data = env_request_data_v1["postAPI"]
+        post_api_response_data = env_response_data_v1["postAPI"]
         # send request
         response = requests.post(host + post_api,json=post_api_request_data)
         # assert

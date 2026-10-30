@@ -2,10 +2,9 @@ name: Pytest API Testing
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
-
+    branches: [ "master" ]
 jobs:
   test:
     runs-on: ubuntu-latest
